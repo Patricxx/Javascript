@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <header>
+        <h1>JavaScript TechGrounds</h1>
+    </header> 
+
+<!-- <h3>Oefening 4.1</h3>  
+<p>We gaan functies oefenen door bij het begin te beginnen:</p>
+
+<p> A) Maak een button en verbind er een functie aan.</p> 
+<p> B) Zorg ervoor dat de functie in de console “Hello World” logt</p>.
+
+<p> C) Maak een input element en geef het een bepaald ID.</p> 
+<p> D)Sla dat ID op in een variabele via document.GetElementByID()</p>.
+
+<p> E) Maak een functie met een parameter die deze in de console logt.</p> 
+<p> F) Geef de ID variabele hier aan mee. Wat zie je in de console</p>?
+
+<p> G) Geef je functie een return waarde, bijvoorbeeld de parameter * 2.</p> 
+<p> H) aak vervolgens een nieuwe variabele “result”.</p> 
+<p> I) Roep je functie op met een getal als parameter en</p>
+<p> J) wijs de return waarde toe aan “result”.</p> 
+<p> K) Log de variabele daarna in je console</p> -->
+
+
+
+    <!-- <button onclick="myFunction()">Functional Buttons!</button> 
+    <br>
+    <br>
+    <input onchange="myFunction()">
+    <br>
+    <br>
+    <button onclick="Button1()">Button #1</button> 
+    <button onclick="Button2()">Button #2</button>
+    <br>
+    <br>
+    <button id="b1" onclick="pressButtonOne()">Button #1</button> 
+    <button id="b2" onclick="pressButtonTwo()">Button #2</button>
+    <br>
+    <br>
+    <button onclick="pressButton(this)">Button #1</button> 
+    <button onclick="pressButton(this)">Button #2</button>
+    <br>
+    <br>
+    <p>Click the button to trigger a function.</p>
+
+    <button onclick="myFunction()">Click Me!</button> -->
+
+
+<!-- <h3>Oefening 4.2</h3>
+<p>We gaan een paar veelgebruikte DOM methods onderzoeken.</p>
+<p>Je bent inmiddels bekend met document.GetElementById().</p> 
+<p>Veel andere DOM methods geven Arrays terug -</p> 
+<p>je hebt het inmiddels al vaker gelezen maar hoe je die verwerkt gaan we later nog leren :)</p>
+
+
+
+<p>  Onderzoek de volgende DOM methodes en gebruik ze in een voorbeeld:</p>
+<p> A1) document.getElementsByClassName</p>
+<p> A2) document.getElementsByTagName</p>
+<p> A3) document.querySelector</p>
+<p> A4) document.querySelectorAll</p>
+<p> A5) element.innerHTML</p>
+<p> A6) element.innerText</p>
+
+<p>Bij opdracht 4.1c heb je een input als parameter meegegeven.</p> 
+<p>Roep die functie nu aan met een oninput ipv onchange, en console.log() de parameter.value ipv de parameter.</p> 
+<p>Zie je het verschil in beide gevallen</p>
+
+
+<h4>A1 Document.getElementsByClassName</h4>
+
+    <div class="test">Will Change</div>
+    <div class="test">No Change</div>
+    <button onclick="myFunction()">Click Me!</button>
+    <br>
+    <br> -->
+
+
+<!-- <h4>A2 Document.getElementsByTagName</h4>
+
+  <ul>
+    <li>Patrick</li>
+    <li>Alexander</li>
+    <li>Hemmers</li>
+  </ul>
+  <button onclick="myFunction()">Click Me!</button>
+  <p id="test"></p> -->
+
+
+<!-- <h4>A3 Document.querySelector</h4>
+
+<h2 class="test">A heading with class="test"</h2>
+<p class="test">A paragraph with class="test".</p> 
+
+<button onclick="myFunction()">Click Me!</button> -->
+
+<!-- <h4>A4 Document.querySelectorAll</h4>
+
+<h2 class="test">A heading with class="test"</h2>
+<p class="test">A paragraph with class="test".</p> 
+<p class="test">A paragraph with class="test".</p> 
+<p class="test">A paragraph with class="test".</p> 
+<p class="test">A paragraph with class="test".</p> 
+<p class="test">A paragraph with class="test".</p> 
+
+<button onclick="myFunction()">Click Me!</button> -->
+
+
+<!-- <h4>A5 Element.innerHTML</h4>
+
+<p id="test" onclick="myFunction()">Click me to change.</p> -->
+
+
+<!-- <h4>A6 Element.innerText</h4>
+
+<p>Click the button get the text content of the button element.</p>
+
+<button onclick="myFunction()" id="button">Click Me!</button>
+<p id="test"></p> -->
+
+
+
+<!-- <h3>Oefening 4.3</h3> 
+<p>Eerder heb je kennis gemaakt met het String object en de built-in String Methods.</p> 
+<p>Nu gaan we kennismaken met nog zo een - het Math object.</p> 
+<p>Het Math object heeft namelijk ook methods die bij functies erg veel gebruikt worden:</p>
+
+<h4>A RandomNumber()</h4>
+<p>Maak een functie randomNumber() en verbindt die aan een button.</p>
+<p>Zorg dat de functie Math.random() in de console logt.</p>
+<p>at merk je op als je deze meerdere keren gebruikt?</p>
+
+<p>Click the button to display a random number.</p>
+<button onclick="myFunction1()">Click Me!</button>
+
+<p id="test1"></p>
+
+
+<p>Als je die laat afronden met Math.round(),</p>
+<p>zal het vaker afronden naar beneden dan naar boven.</p>
+
+
+<p>Click the button to round the number 2.5 to its nearest integer.</p>
+<button onclick="myFunction2()">Click Me!</button>
+
+<p id="test2"></p>
+
+
+<h4>B Math.floor(Math.random() * x).</h4>
+<p>Verander je functie nu dat hij een parameter x gebruikt,</p> 
+<p>en zorg dat hij het volgende in je console logt: Math.floor(Math.random() * x).</p> 
+<p>Test nu je functie met verschillende waardes voor x. Valt iets je op?</p>
+
+<button onclick="myFunction3()">Click Me!</button>
+
+<p id="test3"></p>
+
+
+<h4>C Math.min() en Math.max()</h4>
+<p>Er zijn nog 2 belangrijke Math methods die handig zijn om te kennen.</p>
+<p>Onderzoek wat Math.min() en Math.max() doen.</p>
+<p>Kan je van beide al een voorbeeld geven?</p>
+
+
+<h5>Math.max()</h5>
+<p>Click the button to return the highest number of 5 and 10.</p>
+<button onclick="myFunction4()">Click Me!</button>
+
+<p id="test4"></p>
+
+<h5>Math.min()</h5>
+<p>Click the button to return the lowest number of 5 and 10.</p>
+<button onclick="myFunction5()">Click Me!</button>
+
+<p id="test5"></p> -->
+
+
+<!-- <h3>Oefening 4.4</h3> 
+<p>We eindigen deze oefeningen met een lastige:
+
+<p> A) Schrijf een functie waar je een naam aan mee kan geven. 
+<p> B) Laat de naam vergelijken met de namen van mensen in je groepje. 
+<p> C) Wanneer je functie de naam wel/niet herkent moet dat als boodschap teruggegeven worden.
+<p> D) Schrijf een 2e functie die de eerste functie aanroept, 
+<p> E) En vervolgens de teruggegeven boodschap in een div element op je pagina toont. 
+<p>    Denk aan de DOM methods!
+<p> F) Schrijf nu het bovenstaande nogmaals, maar gebruik dit keer Arrow Functions. 
+<p>    Als het niet overal lukt is dat niet erg! 
+<br>
+<br>
+
+
+<h4>Breakoutroom 4</H4>
+<input id="names">
+<button type="button" onclick="names();">Click Me!</button>
+<p id="test"></p> -->
+
+<!-- 
+<h3>Oefening 5.1</h3>  -->
+
+
+<!-- <h3>Oefening 5.2</h3>  -->
+
+
+<!-- <h3>Oefening 5.3</h3>  -->
+
+<!-- <h3>Oefening 5.4</h3>
+
+<div>Some Text</div>
+<div>Some Text</div> -->
+
+<h3>Oefening 6.1</h3>
+
+
+<script src="opdracht_6v1.js"></script>
+
+</body>
+</html>
